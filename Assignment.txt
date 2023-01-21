@@ -1,0 +1,59 @@
+sagnik@sagnik-HP-Notebook:~$ cd Desktop
+sagnik@sagnik-HP-Notebook:~/Desktop$ mkdir Patronus
+sagnik@sagnik-HP-Notebook:~/Desktop$ cd Patronus
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ touch patronus.txt
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git add .
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git init
+Initialized empty Git repository in /home/sagnik/Desktop/Patronus/.git/
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git ad .
+git: 'ad' is not a git command. See 'git --help'.
+
+Did you mean one of these?
+	add
+	am
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git add .
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git commit -m "add empty patronus file"
+[master (root-commit) 19ea5cd] add empty patronus file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 patronus.txt
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git branch harry 
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git branch snape
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git checkout harry
+Switched to branch 'harry'
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git add .
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git commit -m "add harry's stag patronus"
+[harry 04b9029] add harry's stag patronus
+ 1 file changed, 32 insertions(+)
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git checkout snape
+Switched to branch 'snape'
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git add .
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git commit -m "add harry's stag patro"add snape'snus"
+> ^C
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git commit -m "add snape's
+> doe patronus"^C
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git commit -m "add snape's doe patronus"
+[snape dbbc4cc] add snape's doe patronus
+ 1 file changed, 17 insertions(+)
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git checkout -b lily snape
+Switched to a new branch 'lily'
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git add .
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git commit -m "add lily's doe patronus"
+[lily a254c62] add lily's doe patronus
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git.
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git checkout master
+Switched to branch 'master'
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git log
+commit 19ea5cdc84d945b40b88fbe84d14645187cba69c
+Author: Sagnik <sagnik938@gmail.com>
+Date:   Sun Jan 22 02:11:00 2023 +0530
+
+    add empty patronus file
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git branch -r
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git branch -a
+  harry
+  lily
+* master
+  snape
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$
