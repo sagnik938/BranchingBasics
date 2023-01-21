@@ -56,4 +56,10 @@ sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git branch -a
   lily
 * master
   snape
-sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git branch -d snape
+error: The branch 'snape' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D snape'.
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ git branch -D snape
+Deleted branch snape (was dbbc4cc).
+sagnik@sagnik-HP-Notebook:~/Desktop/Patronus$ 
+
